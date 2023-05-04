@@ -414,5 +414,11 @@ interface SoccerResponse {
 
 
 
+//POSSIBILITIES ERRORS
+![image](https://user-images.githubusercontent.com/66834393/236109250-470e0527-41e3-495c-bafc-738c3fe90821.png)
+![image](https://user-images.githubusercontent.com/66834393/236109258-1149ec6d-4c26-476e-ae0f-211118971884.png)
+![image](https://user-images.githubusercontent.com/66834393/236109280-ac85195f-c9ba-483a-93ab-22a4481a55f3.png)
+
+
 
 
