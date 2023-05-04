@@ -56,14 +56,15 @@ class MainActivity : AppCompatActivity(),ReturnPos,SoccerResponse {
      * start configuration camera X
      */
     private fun startCameraJhr() {
-        cameraJhr.addlistenerResponse(object : BitmapResponse {
+        cameraJhr.addlistenerBitmap(object : BitmapResponse {
             override fun bitmapReturn(bitmap: Bitmap?) {
                 if (bitmap!=null){
                     //val newBitmap = binding.cameraPreview.bitmap
-                    val newBitmap2 = bitmap.rotate(180f)
-                    val newBitmap = detectFaceFromBitmap.recognizedFace(newBitmap2)
+                    //val newBitmap2 = bitmap.rotate(180f)
+
+                    val newBitmap = detectFaceFromBitmap.recognizedFace(bitmap)
                     if (!factorCalculate){
-                        binding.overlayView.calculateScaleFactor(newBitmap2.width,newBitmap2.height)
+                        binding.overlayView.calculateScaleFactor(bitmap.width,bitmap.height)
                         factorCalculate = true
                     }
                     runOnUiThread {
@@ -76,7 +77,7 @@ class MainActivity : AppCompatActivity(),ReturnPos,SoccerResponse {
         cameraJhr.initBitmap()
         //selector camera LENS_FACING_FRONT = 0;    LENS_FACING_BACK = 1;
         //aspect Ratio  RATIO_4_3 = 0; RATIO_16_9 = 1;
-        cameraJhr.start(0,0,binding.cameraPreview,false)
+        cameraJhr.start(0,0,binding.cameraPreview,true,false,true)
     }
 
     /**

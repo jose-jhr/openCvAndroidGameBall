@@ -2,7 +2,6 @@ package com.ingenieriajhr.firstopencv.utilsOpen
 
 import android.content.Context
 import android.util.Log
-import com.ingenieriajhr.firstopencv.R
 import org.opencv.objdetect.CascadeClassifier
 import java.io.File
 import java.io.FileOutputStream
