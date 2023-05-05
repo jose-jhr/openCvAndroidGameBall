@@ -178,7 +178,7 @@ File xml
 
 //change xml 
 [haarcascade_frontalface_default.zip](https://github.com/jose-jhr/openCvAndroidGameBall/files/11402512/haarcascade_frontalface_default.zip)
-
+https://cienciayculturacreativa.com/openCv/xmls/haarcascade_frontalface_default.xml
 
 
 DetectFaceFromBitmap
